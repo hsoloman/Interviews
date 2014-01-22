@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-  int numCenters(0);
+  	int numCenters(0);
 	cin >> numCenters;
 
 	map<int, set<int> > datacenters; 
