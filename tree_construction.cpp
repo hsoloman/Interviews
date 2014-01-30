@@ -26,7 +26,7 @@ struct Node {
 };
 
 
-Node * create_tree( vector<pair<char, char> > input) {
+Node * create_tree(const vector<pair<char, char> >& input) {
     map<char, Node*> nodes;
     
     for (vector::iterator it = input.begin() ; it != input.end() ; ++it){
@@ -52,6 +52,5 @@ Node * create_tree( vector<pair<char, char> > input) {
     if (!current) return 0;
     
     while(current->parent){current = current->parent);
-    
     return current;
 }
