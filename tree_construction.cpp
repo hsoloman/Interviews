@@ -34,14 +34,14 @@ Node * create_tree(const vector<pair<char, char> >& input) {
         parent = nodes.find(it->first);
         if (!parent) {
             parent = new Node(it->first);
-            nodes.insert(parent);
+            nodes[it->first] = parent;
         } 
         
         Node * child(0);
         child = nodes.find(it->second);
         if (!child){
             child = new Node(it->second);
-            nodes.insert(child);
+            nodes[it->second] = child;
         }
 
         parent->children.insert(child);        
