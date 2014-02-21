@@ -22,9 +22,9 @@ string getMajorElement(const string& tokens){
         }
     }
         
-    for(pair<string, int> p : mp){
-        if (p.second >= numTokens/2) {
-            return p.first;  
+    for(auto pair : mp){
+        if (pair.second >= numTokens/2) {
+            return pair.first;  
         }
     }
     
