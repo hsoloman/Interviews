@@ -20,7 +20,7 @@ int main() {
 			cin >> temp;
 			datacenters[center].insert(temp);
 			dataLocations[temp].insert(center);
-            data.insert(temp);
+            		data.insert(temp);
 		}
 	}
 
