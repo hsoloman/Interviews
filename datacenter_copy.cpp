@@ -13,7 +13,7 @@ int main() {
 
 	for (int center = 1 ; center <= numCenters; center++){
 		int numids(0);
-        cin >> numids;
+        	cin >> numids;
 
 		int temp(0);
 		for (int j = 0 ; j < numids ; j++){
