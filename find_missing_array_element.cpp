@@ -1,4 +1,4 @@
-int missing element(const vector<int> & A, const vector<int> & B)
+int missing_element(const vector<int> & A, const vector<int> & B)
 {
 // B is missing 1 element that is in A
     int i(0);
