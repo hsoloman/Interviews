@@ -18,3 +18,8 @@ int missing element(const vector<int> & A, const vector<int> & B)
 
     return sum;
 }
+
+
+// NOTES: 
+//  addition can be replaced with XOR 
+// read: http://www.ardendertat.com/2011/09/27/programming-interview-questions-4-find-missing-element/
