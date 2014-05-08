@@ -22,6 +22,7 @@ int isSubstringBF(const string & A, const string & b)
 
 int isSubstring(const string & A, const string & b)
 {
+    // TODO Rabin-Karp, Knuth-Morris-Pratt
     return isSubstringBF(A, b);
 }
 
