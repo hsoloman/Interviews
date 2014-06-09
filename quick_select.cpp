@@ -27,6 +27,8 @@ void quickSort(vector<int>& A, int lo, int hi){
 
 // find kth smallest
 int quickSelect(vector<int>& A, int k, int lo, int hi){
+    // error if k > A.size() )
+    
     int pivot = partition(A, lo, hi);
     
     if (pivot+1 == k) 
