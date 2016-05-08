@@ -9,12 +9,12 @@ class Node {
 };
 
 Node * merge(Node* a, node* b){
-    Node * ret(0);
-    Node * current(0);
+    Node * ret(nullptr);
+    Node * current(nullptr);
     
     if (a && !b){return a;}
     else if (!a && b){return b;}
-    else if (!a && !b){return 0;}
+    else if (!a && !b){return nullptr;}
     
     if (a->val < b->val) {
         ret = a;
@@ -39,7 +39,7 @@ Node * merge(Node* a, node* b){
 
     if (a) {current->next = a;}
     else if (b) {current->next = b;}
-    else {current->next = 0;}
+    else {current->next = nullptr;}
     
     return ret;
 }
